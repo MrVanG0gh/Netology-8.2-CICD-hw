@@ -11,7 +11,13 @@
 4. `В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.`
 
 `При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![Screenshot_1](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_1.png)`
+![Screenshot_2](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_2.png)`
+![Screenshot_3](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_3.png)`
+![Screenshot_4](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_4.png)`
+![Screenshot_5](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_5.png)`
+![Screenshot_6](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_6.png)`
+![Screenshot_7](https://github.com/MrVanG0gh/Netology-8.01-git-hw/blob/main/Ex1_7.png)`
 
 ---
 
