@@ -10,13 +10,13 @@
 Создайте в jenkins Freestyle Project, подключите получившийся репозиторий к нему и произведите запуск тестов и сборку проекта go test . и docker build ..`
 4. `В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.`
 
-![Screenshot_1](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_1.png)`
-![Screenshot_2](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_2.png)`
-![Screenshot_3](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_3.png)`
-![Screenshot_4](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_4.png)`
-![Screenshot_5](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_5.png)`
-![Screenshot_6](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_6.png)`
-![Screenshot_7](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_7.png)`
+![Screenshot_1](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_1.png)
+![Screenshot_2](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_2.png)
+![Screenshot_3](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_3.png)
+![Screenshot_4](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_4.png)
+![Screenshot_5](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_5.png)
+![Screenshot_6](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_6.png)
+![Screenshot_7](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex1_7.png)
 
 ---
 
