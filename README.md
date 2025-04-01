@@ -212,6 +212,97 @@ Finished: SUCCESS
 4. `Загрузите файл в репозиторий с помощью jenkins.`
 5. `В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.`
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+![Screenshot_1](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex3_1.png)
+![Screenshot_2](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex3_2.png)
+![Screenshot_3](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex3_3.png)
+![Screenshot_4](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex3_4.png)
+![Screenshot_5](https://github.com/MrVanG0gh/Netology-8.2-CICD-hw/blob/main/Ex3_5.png)
+
+Started by user van
+
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins
+ in /var/lib/jenkins/workspace/Ex_03
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Git)
+[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Ex_03/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/netology-code/sdvps-materials.git # timeout=10
+Fetching upstream changes from https://github.com/netology-code/sdvps-materials.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/netology-code/sdvps-materials.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision da5acf7bcb7f437637adf06fbd03a24dc2c8f13e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f da5acf7bcb7f437637adf06fbd03a24dc2c8f13e # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master da5acf7bcb7f437637adf06fbd03a24dc2c8f13e # timeout=10
+Commit message: "branch main, add creds for vagrant box"
+ > git rev-list --no-walk da5acf7bcb7f437637adf06fbd03a24dc2c8f13e # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Test)
+[Pipeline] sh
++ go test .
+ok  	github.com/netology-code/sdvps-materials	(cached)
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] sh
++ go build .
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Push)
+[Pipeline] sh
++ curl -u admin:admin http://localhost:8081/repository/raw-hosted/ --upload-file sdvps-materials -v
+* Host localhost:8081 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8081...
+* Connected to localhost (::1) port 8081
+* Server auth using Basic with user 'admin'
+> PUT /repository/raw-hosted/sdvps-materials HTTP/1.1
+> Host: localhost:8081
+> Authorization: Basic YWRtaW46YWRtaW4=
+> User-Agent: curl/8.5.0
+> Accept: */*
+> Content-Length: 2050207
+> Expect: 100-continue
+> 
+< HTTP/1.1 100 Continue
+} [65536 bytes data]
+* We are completely uploaded and fine
+< HTTP/1.1 201 Created
+< Date: Tue, 01 Apr 2025 21:19:52 GMT
+< Server: Nexus/3.79.0-09 (COMMUNITY)
+< X-Content-Type-Options: nosniff
+< Content-Security-Policy: sandbox allow-forms allow-modals allow-popups allow-presentation allow-scripts allow-top-navigation
+< X-XSS-Protection: 1; mode=block
+< Content-Length: 0
+< 
+
+100 2002k    0     0  100 2002k      0  2558k --:--:-- --:--:-- --:--:-- 2557k
+100 2002k    0     0  100 2002k      0  2558k --:--:-- --:--:-- --:--:-- 2557k
+* Connection #0 to host localhost left intact
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+
+
 
